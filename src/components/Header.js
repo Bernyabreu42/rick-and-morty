@@ -1,8 +1,10 @@
-export default function Header() {
+import style from '../../style/Navbar.module.css'
 
+
+export default function Header() {
   return (
-    <div >
-      <img src='/images/headers2.jpg' alt="" />
+    <div className={style.header}>
+      <h1>Welcome to The site Rick and Morty</h1>
     </div>
   )
 }

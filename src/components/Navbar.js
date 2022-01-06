@@ -6,12 +6,16 @@ export default function Navbar() {
     <div className={style.nav} >
       <div className={style.navbar} >
         <div className={style.logo} >
-          <img src="/images/logo.png" alt="Logo rick and morty" draggable="false" />
+          <Link href="/">
+            <a >
+              <img src="/images/logo.png" alt="Logo rick and morty" draggable="false" />
+            </a>
+          </Link>
         </div>
         <div className={style.navegacion}>
-          <Link href={""}><a>characters</a></Link>
-          <Link href={""}><a>locations</a></Link>
-          <Link href={""}><a>episodes</a></Link>
+          <Link href={"/characters"}><a>characters</a></Link>
+          <Link href={"/locations"}><a>locations</a></Link>
+          <Link href={"/episodes"}><a>episodes</a></Link>
         </div>
       </div>
     </div>

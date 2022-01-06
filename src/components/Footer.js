@@ -8,7 +8,6 @@ export default function Footer() {
         <a>Berny Abreu</a>
       </Link>
       <p>&copy;  All right Reserverd <span>2021 - {new Date().getFullYear()}</span></p>
-
     </div>
   )
 }

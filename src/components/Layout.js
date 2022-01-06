@@ -1,12 +1,17 @@
 import Navbar from './Navbar'
 import Footer from './Footer'
-import Header from './header'
+import React, { useContext } from 'react'
+
 
 export default function Layout({ children }) {
+
+
   return (
     <main className="container">
       <Navbar />
-      {children}
+      <div className='container_center'>
+        {children}
+      </div>
       <Footer />
     </main>
   )

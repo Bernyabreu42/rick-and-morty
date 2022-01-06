@@ -10,10 +10,13 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <title>rick and morty</title>
+          <title>Rick and Morty</title>
+          {/* Google fonts Patrick */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
           <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet" />
+          {/*Favicon */}
+          <link rel="icon" href="/images/favicon.png" />
         </Head>
         <body>
           <Main />
