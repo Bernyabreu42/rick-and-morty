@@ -1,0 +1,25 @@
+.nav{
+  color: var(--textLight);
+  background: var(--grayOscuro);
+}
+
+.navbar{
+  max-width: 1320px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo{
+  width: 150px;
+  height: auto;
+}
+
+.navegacion{
+    display: flex;
+    gap: 1em;
+    font-size: 24px;
+}

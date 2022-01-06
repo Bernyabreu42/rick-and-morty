@@ -1,0 +1,31 @@
+:root{
+  --primary: #5ae400;
+  --secondary: #31a200;
+  --grayOscuro: #24282f;
+  --textDark: var(var(--secondary));
+  --textLight:  #f5f5f5;
+  --cards: #3c3e44;
+  --hover: #ff9800;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Patrick Hand', cursive;
+}
+
+.container{
+  display: grid;
+  grid-template-rows: 70px 1fr 100px;
+  height: 100vh;
+  width: 100%;
+}
+
+a{
+  color: var(--textLight);
+  text-decoration: none;
+}
+
+
+
