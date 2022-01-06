@@ -12,8 +12,11 @@ export default function Home() {
 
     <ContextValue.Provider value={{ nombre: "Berny" }}>
       < Layout >
-        <h1>mi mundo</h1>
-        <Card />
+
+        <section className="ListCards">
+          <Card />
+        </section>
+
       </Layout>
     </ContextValue.Provider>
 

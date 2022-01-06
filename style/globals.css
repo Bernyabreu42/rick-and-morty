@@ -4,15 +4,15 @@
   --grayOscuro: #24282f;
   --textDark: var(var(--secondary));
   --textLight:  #f5f5f5;
-  --cards: #3c3e44;
+  --cards: #797a7a;
   --hover: #ff9800;
+  --fontFamily: 'Patrick Hand', cursive;
 }
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Patrick Hand', cursive;
 }
 
 .container{
@@ -23,16 +23,23 @@
 }
 
 .container_center{
-  max-width: 1320px;
-  height: 100%;
   margin: auto;
+  max-width: 1320px;
   padding: 20px;
+
 }
 
 a{
   color: var(--textLight);
   text-decoration: none;
+  font-family: var(--fontFamily);
 }
 
-
+.ListCards{
+  max-width: 1320px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1em;
+}
 
