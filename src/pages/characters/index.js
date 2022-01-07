@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Card from '../components/Card';
-import Layout from "../components/Layout";
-import GetCharacters from "../services/GetCharacters";
+import Card from '../../components/Card';
+import Layout from "../../components/Layout";
+import GetCharacters from "../../services/GetCharacters";
 
 export default function characters() {
 
