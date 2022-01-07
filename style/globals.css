@@ -38,8 +38,9 @@ a{
 .ListCards{
   max-width: 1320px;
   height: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
   gap: 1em;
 }
 
