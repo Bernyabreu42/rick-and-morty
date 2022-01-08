@@ -21,6 +21,8 @@ export default function characters() {
       </Layout>
     )
   } else {
+
+    console.log(data)
     return (
       <Layout>
         <section className="ListCards">
@@ -28,6 +30,10 @@ export default function characters() {
             data.results.map(el => <Card key={el.id} props={el} />)
           }
         </section>
+        <div className='pagination'>
+          <button>Previus</button>
+          <button>Next</button>
+        </div>
 
       </Layout>
     )

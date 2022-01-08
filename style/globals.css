@@ -64,3 +64,9 @@ font-size: 1.2rem;
 .pagination button:last-child{
   background: var(--primary);
 }
+
+
+.pagination button:last-child:hover{
+  background: var(--secondary);
+  color: var(--textLight);
+}

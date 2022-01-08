@@ -16,11 +16,15 @@ export default function GetCharacters() {
       }
 
       let { info, results } = await res.json();
-      return { info, results }
+
+      let respuesta = await fetch(info.next);
+      let nextPage = await respuesta.json();
+      return { info, results, nextPage }
     } catch (err) {
       console.error(err);
     }
   }
+
   return getData(apiURL);
 
 }

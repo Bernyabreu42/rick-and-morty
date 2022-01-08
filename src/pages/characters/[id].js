@@ -4,7 +4,7 @@ import Layout from '../../components/Layout';
 import OnlyCharacter from '../../components/OnlyCharacter';
 
 export default function Charter() {
-  const router = useRouter()
+  const router = useRouter();
   const apiURL = `https://rickandmortyapi.com/api/character/${router.query.id}`;
 
   const [data, setData] = useState(null)
@@ -35,10 +35,6 @@ export default function Charter() {
     charter()
   }, [apiURL])
 
-
-  if (router.query.id <= 1) {
-
-  }
 
   if (data === null) {
     return (
