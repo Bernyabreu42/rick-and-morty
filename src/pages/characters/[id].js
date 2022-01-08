@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Layout from '../../components/Layout';
 import OnlyCharacter from '../../components/OnlyCharacter';
+import Spinner from '../../components/Spinner';
 
 export default function Charter() {
   const router = useRouter();
@@ -39,7 +40,7 @@ export default function Charter() {
   if (data === null) {
     return (
       <Layout>
-        Loading...
+        <Spinner />
       </Layout>
     )
   } else {
@@ -48,7 +49,8 @@ export default function Charter() {
         <OnlyCharacter key={data.id} props={data} />
         <div className='pagination'>
           <button onClick={() => router.query.id <= 1 ? "" : router.push(`/characters/${+router.query.id - 1}`)}>Previus</button>
-          <button onClick={() => router.query.id >= 826 ? "" : router.push(`/characters/${+router.query.id + 1}`)} >Next</button>
+          <button onClick={() => router.query.id <= 1 ? "" : router.push(`/characters/${Math.floor(Math.random() * 826)}`)}>Random</button>
+          <button onClick={() => router.query.id >= 826 ? "" : router.push(`/characters/${+router.query.id + 1}`)} >Next </button>
         </div>
       </Layout>
     )

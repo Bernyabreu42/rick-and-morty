@@ -2,6 +2,7 @@ import Layout from "../components/Layout";
 import React, { useContext } from 'react';
 import { useRouter } from 'next/router'
 
+
 export default function Home() {
   const router = useRouter()
 
@@ -10,7 +11,7 @@ export default function Home() {
 
     < Layout >
       <section className="ListCards">
-        texto mientas
+        Pagina principal
       </section>
     </Layout>
 

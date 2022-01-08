@@ -1,7 +1,5 @@
-import { useState, useEffect } from 'react'
+export default function GetCharacters(url) {
 
-const apiURL = `https://rickandmortyapi.com/api/character`;
-export default function GetCharacters() {
 
 
   const getData = async (url) => {
@@ -25,6 +23,6 @@ export default function GetCharacters() {
     }
   }
 
-  return getData(apiURL);
+  return getData(url);
 
 }

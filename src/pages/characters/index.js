@@ -1,46 +1,22 @@
-import React, { useState, useEffect } from 'react';
-import Card from '../../components/Card';
+import React, { useState, useEffect } from 'react'
 import Layout from "../../components/Layout";
-import GetCharacters from "../../services/GetCharacters";
+import Spinner from "../../components/Spinner";
+import { useRouter } from "next/router";
+
 
 export default function characters() {
-
-  const [data, setData] = useState(null)
+  const router = useRouter()
 
   useEffect(() => {
-    GetCharacters().then(res => {
-      setData(res)
-    })
+    if (router.pathname === '/characters') {
+      console.log("Es igual")
+      router.push(`/characters/${Math.floor(Math.random() * 826)}`)
+    }
   }, [])
 
-
-  if (data === null) {
-    return (
-      <Layout>
-        Loading...
-      </Layout>
-    )
-  } else {
-
-    console.log(data)
-    return (
-      <Layout>
-        <section className="ListCards">
-          {
-            data.results.map(el => <Card key={el.id} props={el} />)
-          }
-        </section>
-        <div className='pagination'>
-          <button>Previus</button>
-          <button>Next</button>
-        </div>
-
-      </Layout>
-    )
-  }
-
-
-
-
-
+  return (
+    <Layout>
+      <Spinner />
+    </Layout>
+  )
 }
