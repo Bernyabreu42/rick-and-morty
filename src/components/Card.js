@@ -1,10 +1,9 @@
 import styleLocal from '../../style/Card.module.css';
-import Charter from '../pages/characters/[id]';
 import { useRouter } from 'next/router'
 
 
 export default function Card(props) {
-  const { id, name, image, species, status } = props.props;
+  const { id, name, image } = props.props;
 
   const router = useRouter();
 

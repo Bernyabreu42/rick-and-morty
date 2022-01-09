@@ -1,7 +1,4 @@
 export default function GetCharacters(url) {
-
-
-
   const getData = async (url) => {
     let res = await fetch(url);
 
@@ -22,7 +19,5 @@ export default function GetCharacters(url) {
       console.error(err);
     }
   }
-
   return getData(url);
-
 }
