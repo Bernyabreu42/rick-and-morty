@@ -24,15 +24,4 @@
     font-size: 24px;
 }
 
-.header{
-  height: 100%;
-  background: var(--grayOscuro);
-  color: var(--textLight);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
-  text-align: center;
-}
 

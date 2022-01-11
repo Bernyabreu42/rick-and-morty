@@ -1,6 +1,7 @@
 import Layout from "../components/Layout";
-import React, { useContext } from 'react';
+import React from 'react';
 import { useRouter } from 'next/router'
+import Header from "../components/Header";
 
 
 export default function Home() {
@@ -8,12 +9,8 @@ export default function Home() {
 
 
   return (
-
     < Layout >
-      <section className="ListCards">
-        Pagina principal
-      </section>
+      <Header />
     </Layout>
-
   )
 }

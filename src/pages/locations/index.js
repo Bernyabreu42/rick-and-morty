@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import Layout from "../components/Layout";
-import GetLocations from "../services/GetLocations";
-import Spinner from '../components/Spinner';
-import CardLocations from '../components/CardLocations';
+import Layout from "../../components/Layout";
+import GetLocations from "../../services/GetLocations";
+import Spinner from '../../components/Spinner';
+import CardLocations from '../../components/CardLocations';
 
 export default function Locations() {
 
@@ -30,7 +30,7 @@ export default function Locations() {
           {
             data.map((el) => {
               return (
-                <CardLocations key={el} props={el} />
+                <CardLocations key={el.id} props={el} />
               )
             })
           }
